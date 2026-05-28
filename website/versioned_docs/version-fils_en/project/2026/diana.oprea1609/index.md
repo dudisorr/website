@@ -51,14 +51,23 @@ Overall, this project allows me to explore the intersection between embedded sys
 - Studied different methods for limiting and stabilizing current
 - Continued learning about GVS behavior and constraints
 
+### Week 10 - 14
+- Implemented LCD display support
+- Integrated pulse sensor BPM monitoring
+- Implemented PS4 controller input handling
+- Added emergency-state handling logic
+- Started integrating Velostat emergency sensor
+- Tested ADC-based pressure sensing and threshold detection
+
 ## Hardware
 
 - Microcontroller: STM32U545RE Nucleo (core logic)
 - Communication: HC-05 Bluetooth module (wireless UART communication)
 - Analog Circuit: 2N3904 (NPN) and 2N3906 (PNP) transistors (current control)
 - Power Supply (Analog): 4xAA battery pack + XL6009 boost converter
-- Power Supply (Digital): Separate battery pack for STM32 and peripherals
+- Power Supply (Digital): Separate battery pack for STM32 + XL6009 boost converter
 - Sensor: Heart rate sensor (pulse monitoring)
+- Emergency Sensor: Homemade Velostat pressure sensor
 - Display: LCD screen (real-time heart rate display)
 - Input Device: PS4 controller (user input via PC)
 - Connections: Jumper wires, connectors, electrodes (E1, E2)
@@ -82,8 +91,9 @@ Overall, this project allows me to explore the intersection between embedded sys
 | [Electrode Cables (3.5mm)](https://www.emag.ro/set-2-cabluri-conexiune-jack-3-5mm-pentru-electrozi-snap-on-3-5mm-compatibile-cu-aparatele-electrostimulare-tens-si-ems-lungime-150-cm-culoare-alb-cbl2/pd/DZQL9RYBM/) | Connection between circuit and electrodes | 31 RON |
 | [Electrodes (TENS pads)](https://www.emag.ro/set-20-electrozi-paduri-cu-gel-pentru-aparat-electrostimulare-reutilizabili-alb-21-tens-pads/pd/DYZ39TYBM/) | GVS stimulation interface | 35 RON |
 | [Heart Pulse Sensor (AI206)](https://www.emag.ro/modul-senzor-puls-cardiac-ai206-s104/pd/DXX2YRBBM/) | Heart rate monitoring | 15 RON |
-| [LCD 16x2 with I2C](https://www.emag.ro/display-lcd-2-x-16-cu-convertor-i2c-80-x-35-mm-verde-albastru-negru-2-e-001/pd/DHRJ0LMBM/) | Real-time heart rate display | 23 RON |
-| **Total** |  | **461 RON** |
+| [LCD 2004 with I2C](https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/4769-lcd-2004-cu-backlight-albastru-i-interfaa-i2c.html?search_query=LCD+2004+cu+Backlight+Albastru+%C8%99i+Interfa%C8%9Ba+I2C&results=1) | Real-time heart rate display | 40 RON |
+| [Velostat Sheet](-)| Homemade emergency pressure sensor | -- |
+| **Total** |  | **478 RON** |
 
 
 ## Software
